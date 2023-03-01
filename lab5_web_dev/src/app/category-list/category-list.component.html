@@ -1,0 +1,14 @@
+<div id="MainCategorys">
+  <div
+    *ngFor="let category of categorys"
+    style="white-space: pre-line"
+    class="prods"
+  >
+    <a
+      [title]="category.name + ' details'"
+      [routerLink]="['/list', category.id]">
+      {{ category.name }}
+    </a>
+   
+  </div>
+</div>
